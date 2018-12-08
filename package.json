@@ -1,6 +1,6 @@
 {
   "name": "boxa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple, yet powerful IoC container with dependency injection",
   "main": "index.js",
   "scripts": {
