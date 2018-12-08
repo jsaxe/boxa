@@ -10,3 +10,6 @@ install:
   - npm run test
   # Run linting
   - npm run lint
+notifications:
+  email:
+    - hacktivistic@gmail.com
