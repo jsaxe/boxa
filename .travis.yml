@@ -5,7 +5,7 @@ node_js:
 sudo: false
 install:
   - npm install
-  script:
+script:
   # Run test script
   - npm run test
   # Run linting
@@ -13,3 +13,4 @@ install:
 notifications:
   email:
     - hacktivistic@gmail.com
+
