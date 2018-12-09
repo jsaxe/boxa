@@ -140,7 +140,16 @@ describe('Container', function () {
 			var nameObj = { data: "Hacktivistic" }
 			container.register('name', nameObj)
 
-			expect(container.resolve('name').data).to.equal("Hacktivistic")
+			var name = container.resolve('name')
+
+			expect(name.data).to.equal("Hacktivistic")
+
+			var data = { data: "Mac&Cheese" }
+			container.singleton('breakfast', data)
+
+			var data = container.resolve('breakfast')
+
+			expect(data.data).to.equal("Mac&Cheese")
 
 		})
 
