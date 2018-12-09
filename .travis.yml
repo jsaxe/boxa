@@ -13,4 +13,5 @@ script:
 notifications:
   email:
     - hacktivistic@gmail.com
-
+after_script:
+  - npm run coverage
