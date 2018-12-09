@@ -42,7 +42,16 @@ describe('Container', function () {
 
 			expect(container.isRegistered('name')).to.equal(false)
 
-			expect(container)
+		})
+
+		it('blank content registration test', function () {
+
+			var container = new Container()
+
+			// Blank content test
+			container.register('beer')
+
+			expect(container.getContent('beer')).to.equal('beer')
 
 		})
 
@@ -117,6 +126,13 @@ describe('Container', function () {
 			expect(container.resolve('name')).to.equal('Robin')
 			expect(container.isMapped('name')).to.equal(false)
 
+			container.singleton('food', function () {
+				return 'Chicken'
+			})
+
+			expect(container.resolve('food')).to.equal('Chicken')
+			expect(container.isMapped('food')).to.equal(true)
+
 		})
 
 		it('resolution of provider with object as content', function () {
@@ -133,6 +149,20 @@ describe('Container', function () {
 			container.map('name', { nanoAxe: "0.1" })
 
 			expect(container.resolve('name').nanoAxe).to.equal("0.1")
+
+			container.map({
+				alias: "kukhura",
+				provider: "chicken"
+			}, function () {
+				return 'KFC'
+			})
+
+			var kukhura = container.resolve('kukhura')
+			var chicken = container.resolve('chicken')
+
+			expect(kukhura).to.equal(chicken)
+			expect(kukhura()).to.equal(chicken()).to.equal('KFC')
+
 		})
 
 		it('resolution using alias', function () {
