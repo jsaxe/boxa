@@ -2,8 +2,6 @@
 
 module.exports = Container;
 
-var UnknownProviderException = require('./UnknownProviderException');
-
 function Container(){
 
 	/**
@@ -70,6 +68,10 @@ function Container(){
 		return false;
 	};
 
+	this.alias = function (alias, provider) {
+		aliases[alias] = provider;
+	}
+
 	/**
      * Register a provider to service.
      *
@@ -82,7 +84,7 @@ function Container(){
 		if (typeof provider === 'object') {
 			var alias = provider.alias;
 			provider = provider.provider;
-			aliases[alias] = provider;
+			this.alias(alias, provider)
 		}
 		maps[provider] = null;
 		if (content === null)
@@ -141,12 +143,9 @@ function Container(){
 		}
 
 		// Object Generation
-		try {
-			var lib = require('path').resolve('./' + content);
-			var func = require(lib);
-		} catch (error) {
-			throw new UnknownProviderException({name: name, content: lib});
-		}
+		var lib = require('path').resolve('./' + content);
+		var func = require(lib);
+
 		params = params ? params : [
 		];
 

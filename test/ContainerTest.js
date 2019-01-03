@@ -221,11 +221,9 @@ describe('Container', function () {
 
 		it('resolution error', function () {
 
-			var UnknownProviderException = require('../src/Container/UnknownProviderException')
-
 			expect(function () {
 				container.resolve('unknown')
-			}).to.throw(UnknownProviderException)
+			}).to.throw()
 
 		})
 
