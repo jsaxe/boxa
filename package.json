@@ -1,6 +1,6 @@
 {
   "name": "boxa",
-  "version": "1.1.0",
+  "version": "2.1.0",
   "description": "Simple, yet powerful IoC container with dependency injection",
   "main": "index.js",
   "scripts": {
@@ -22,12 +22,12 @@
   "author": "Robin Panta <hacktivistic@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hacktivistic/boxa/issues"
+    "url": "https://github.com/jsaxe/boxa/issues"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "homepage": "https://github.com/hacktivistic/boxa#readme",
+  "homepage": "https://github.com/jsaxe/boxa#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "chai": "^4.2.0",
