@@ -2,8 +2,8 @@
 > Simple, yet powerful IoC container with dependency injection which aims to reduce pain in the butt.
 
 [![NPM Version](https://img.shields.io/npm/v/boxa.svg)](https://www.npmjs.com/package/boxa)
-[![Build Status](https://travis-ci.org/hacktivistic/boxa.svg?branch=master)](https://travis-ci.org/jsaxe/boxa)
-[![Coverage Status](https://coveralls.io/repos/github/hacktivistic/boxa/badge.svg?branch=master)](https://coveralls.io/github/jsaxe/boxa?branch=master)
+[![Build Status](https://travis-ci.org/jsaxe/boxa.svg?branch=master)](https://travis-ci.org/jsaxe/boxa)
+[![Coverage Status](https://coveralls.io/repos/github/jsaxe/boxa/badge.svg?branch=master)](https://coveralls.io/github/jsaxe/boxa?branch=master)
 
 Boxa is a [Node.js](http://nodejs.org) IoC container with dependency injection. It helps manage dependencies with little to no sweat.
 It is designed for nanoAxe framework, but can be used independently for any type of project to manage your dependencies.
