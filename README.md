@@ -2,8 +2,8 @@
 > Simple, yet powerful IoC container with dependency injection which aims to reduce pain in the butt.
 
 [![NPM Version](https://img.shields.io/npm/v/boxa.svg)](https://www.npmjs.com/package/boxa)
-[![Build Status](https://travis-ci.org/hacktivistic/boxa.svg?branch=master)](https://travis-ci.org/hacktivistic/boxa)
-[![Coverage Status](https://coveralls.io/repos/github/hacktivistic/boxa/badge.svg?branch=master)](https://coveralls.io/github/hacktivistic/boxa?branch=master)
+[![Build Status](https://travis-ci.org/hacktivistic/boxa.svg?branch=master)](https://travis-ci.org/jsaxe/boxa)
+[![Coverage Status](https://coveralls.io/repos/github/hacktivistic/boxa/badge.svg?branch=master)](https://coveralls.io/github/jsaxe/boxa?branch=master)
 
 Boxa is a [Node.js](http://nodejs.org) IoC container with dependency injection. It helps manage dependencies with little to no sweat.
 It is designed for nanoAxe framework, but can be used independently for any type of project to manage your dependencies.
@@ -81,7 +81,7 @@ chicken.eggs();	 // Output: Eggs in the frying pan!
 Here, we injected `Spices` and `Onions` behind the scenes. Now, `Chicken` consumer shall not worry about passing `Spices` or `Onions` manually.
 
 ## Documentation
-Check the [documentation](https://nanoaxe.bitnac.com/guides/boxa) at the NanoAxe Boxa page.
+Check the [documentation](https://jsaxe.com/boxa) at the Boxa page.
 
 ## Tests
 To run the test, first install the dependencies, then run `npm test`:
