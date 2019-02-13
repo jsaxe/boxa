@@ -1,6 +1,7 @@
 # BOXA
 > Simple, yet powerful IoC container with dependency injection which aims to reduce pain in the butt.
 
+[![Node Version](https://img.shields.io/node/v/boxa.svg?style=flat)](https://www.npmjs.com/package/boxa)
 [![NPM Version](https://img.shields.io/npm/v/boxa.svg)](https://www.npmjs.com/package/boxa)
 [![Build Status](https://travis-ci.org/jsaxe/boxa.svg?branch=master)](https://travis-ci.org/jsaxe/boxa)
 [![Coverage Status](https://coveralls.io/repos/github/jsaxe/boxa/badge.svg?branch=master)](https://coveralls.io/github/jsaxe/boxa?branch=master)
