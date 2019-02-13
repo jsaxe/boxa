@@ -95,3 +95,7 @@ $ npm test
 ## License
 
 [MIT](LICENSE)
+
+## Author
+
+Robin Panta (Hacktivistic) 😎  &nbsp; [GitHub](https://github.com/hacktivistic) | [Blog](https://robinpanta.com)
